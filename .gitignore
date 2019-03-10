@@ -5,6 +5,8 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+*.backup.*
+*.retry
 
 # Crash log files
 crash.log

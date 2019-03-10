@@ -1,0 +1,32 @@
+- name: Install base soft
+  apt: 
+    update_cache: yes 
+    pkg: '{{ item }}'
+  with_items: 
+    - apt-transport-https
+    - vim
+    - unzip
+    - zip
+    - curl
+    - debsums
+    - whois
+    - telnet 
+    - smartmontools
+    - htop
+    - bash-completion 
+    - git
+    - strace
+    - screen
+    - ntpdate 
+    - python-software-properties
+    - software-properties-common
+
+# - name: Setup hostname
+#   hostname: 
+#       name: "{{ hostname }}"
+
+# - name: Setup bashrc global
+#   template: src=bash.bashrc dest=/etc/bash.bashrc
+  
+# - name: Install droplet monitoring
+#   shell: "curl -sSL https://agent.digitalocean.com/install.sh | sh"
