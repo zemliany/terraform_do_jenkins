@@ -1,2 +1,2 @@
 *.sh linguist-detectable=false
-
+*.rb linguist-language=HCL
